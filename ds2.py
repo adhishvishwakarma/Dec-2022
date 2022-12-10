@@ -1,5 +1,6 @@
 ## List ##
 # Mutable ordered sequence of elements
+import copy
 
 l = []
 l = ['Hello', 1, (2, 3, 4), [5, 6, 7]]  # mixed datatype
@@ -118,7 +119,159 @@ l2 = [4, 5, 6]
 # ## [<operation> <loop> <condition>]
 #
 # # ['Odd', 'Even', 'Odd' ...]
+#
+# print(['Odd' for i in range(1, 10) if i%2 != 0])
+# print(['Odd' if i%2 != 0 else 'Even' for i in range(1, 10)])
+#
+# s = 'Lorem ipsum Hello World'
+# # Create a string with all the space separated strings as revered
+# o = 'meroL muspi olleH dlroW'
+#
+# print(s.split())
+# print([i[::-1] for i in s.split()[::-1]])
+# print(' '.join([i[::-1] for i in s.split()]))
 
-s = 'Lorem ipsum Hello World'
-# Create a string with all the space separated strings as revered
-o = 'meroL muspi olleH dlroW'
+# a = ['red', 'green', 'blue']    ## id
+# b = a
+# print(b)
+#
+# b.append('yellow')
+# print(b)
+#
+# print(a)
+# print(id(a))
+# print(id(b))
+#
+#
+# c = a[:]  # copy
+# print(id(a))
+# print(id(c))
+# c.append('purple')
+# print(c)
+# print(a)
+#
+# d = [i for i in a]  # copy
+# print(id(d))
+# print(d)
+#
+# e = list(a)  # copy
+# f = copy.deepcopy(a)  # copy
+
+
+## Dictionary ##
+
+# d = {}
+# l = ['a', 'b', 'c']
+# print(l[0])
+#
+# d = {'key': 'value'}
+# print(d['key'])
+#
+# d = {0: 'a', 1: 'b', 2: 'c'}
+# print(d[1])
+#
+# d = dict(key='value')
+# print(d)
+# d = dict([(1, 2), (3, 4)])
+# print(d)
+
+# del d[1]
+# print(d)
+# del d
+# print(d)
+#
+
+# l[0] = 'abc'
+# d[1] = 5
+# print(d)
+#
+# a = {'a': 1}
+# b = {'b': 2}
+# a.update(b)
+# print(a)
+#
+# c = a.copy()
+
+# sq = {1:1, 2:4, 3:9, 4:16, 5:25}
+# a = sq.pop(5)
+# print(sq, a)
+# # sq.pop(1)
+# # print(sq)
+# # sq.popitem()
+# # print(sq)
+#
+# # sq.clear()
+# # print(sq)
+#
+# print(sq[3])
+# print(sq.get(3))
+
+
+# d = {'a': 1, 'b': 2, 'c': 3}
+#
+# for i in d:
+#     print(i, d[i])
+#
+# for i in d.values():  # [1, 2, 3]
+#     print(i)
+#
+# for i in d.keys():  # ['a', 'b', 'c']
+#     print(i)
+#
+# for i in d.items():  # [('a', 1), ('b', 2), ('c', 3)]
+#     print(i)
+
+
+## Dictionary comprehension ##
+
+# sq = {1:1, 2:4, 3:9, 4:16, 5:25}
+#
+# sq = {i:i**2 for i in range(1, 6)}
+# print(sq)
+#
+# s = {}
+# for i in range(1, 6):
+#     s[i] = i ** 2
+#     # print(s)
+# print(s)
+
+# revert key value pairs of a dict
+d = {'a': 1, 'b': 2, 'c': 3}
+o = {1: 'a', 2: 'b', 3: 'c'}
+
+# a, b = (1, 2)
+#
+# for k, v in d.items():  # [('a', 1), ('b', 2), ('c', 3)]
+#     print(k, v)
+#
+# x = {v: k for k, v in d.items()}
+# print(x)
+
+# how do I get the key from value
+
+# d = {'a': 1, 'b': 2, 'c': 3, 'd': 2}
+# s = 2
+# for k, v in d.items():  # [('a', 1), ('b', 2), ('c', 3), ('d', 2)]
+#     if s == v:
+#         print(k)
+#         break
+#
+#
+# for i in d:  # iterating over the keys
+#     if d[i] == s:  #d['b']
+#         print(i)
+#
+# print([k for k, v in d.items() if s == v][0])
+#
+# d = {'a': 1, 'b': 2, 'c': 3, 'a': 2}
+
+# Dictionary keys should be unique
+# Dict keys should only be immutable
+
+d = {
+    'asdsd': 1,
+    1: 2,
+    (1, 3): 3
+}
+print(d)
+
