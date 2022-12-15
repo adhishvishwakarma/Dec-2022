@@ -84,6 +84,6 @@ rb+, wb+, ab+
 r - read, require file, resets the cursor to the top
 w - write, if file does not exist, create a new file. If file exist, delete the content and start writing from the start
 a - append, if file does not exist, create a new file. If file exist, start writing from the cursor's position
-x - exclusive creation, if file does not exist, create a file and start writing from the start. 
+x - exclusive creation, if file does not exist, create a file and start writing from the start.
     If file exists fail with error
 """
