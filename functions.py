@@ -172,11 +172,87 @@ def greet_user(name):
 # print(greet(msg='Good morning', name='Adhish'))
 
 
-def func(required_arg, *args, **kwargs):
-    print(required_arg)
-    print(args)
-    print(kwargs)
+# def func(required_arg, *args, **kwargs):
+#     print(required_arg)
+#     print(args)
+#     print(kwargs)
+#
+#
+# func(1, 2, 3, 4, k=5, m=6)
 
 
-func(1, 2, 3, 4, k=5, m=6)
+## Anonymous function
 
+# s = lambda a, b: a + b
+#
+# def s(a, b):
+#     return a + b
+#
+# print(s(10, 12))
+
+# def func_name(arg1, arg2):
+#     return arg1 + arg2
+#
+# print(func_name(1, 3))
+#
+# print((lambda arg1, arg2: arg1+arg2)(1, 3))
+#
+
+
+## Find Factorial ##
+
+# 2! = 2 * 1!
+# 3! = 3 * 2 * 1
+# 3! = 3 * 2!
+# 4! = 4 * 3 * 2 * 1
+# 4! = 4 * 3!
+#
+# n! = n * (n-1)!
+
+
+# def factorial(n):
+#     if n == 1:  # exit condition
+#         return 1
+#     result = n * factorial(n-1)
+#     return result
+
+
+# n = 3
+#
+# 3 * factorial(2)
+# result = 3 * 2
+# return 6
+#
+#     n = 2
+#     2 * 1 #factorial(1)
+#     result = 2
+#     return 2
+#
+#         n = 1
+#         return 1
+
+# print(factorial(3))
+#
+#
+# l = [1, 2, 3, 4, 5]
+#
+# print([1] + [2, 3, 4, 5])
+#
+# print([1] + [2] + [3, 4, 5])
+#
+# print([1] + [2] + [3] + [4, 5])
+#
+# print([1] + [2] + [3] + [4] + [5])
+# print(1 + 2 + 3 + 4 + 5)
+# # 15
+#
+#
+# def find_sum(l):
+#     if len(list) == 1:
+#         return l[0]
+#
+#     else:
+#         return l[0] + find_sum(l[1:])
+#
+#
+# print([1, 2] + [3, 4, 5])

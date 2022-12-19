@@ -71,4 +71,8 @@ for i in range(1, 101):
 
 
 
+# if __name__ == '__main__':
+#     pass
 
+
+print(__name__)
