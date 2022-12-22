@@ -129,30 +129,30 @@ class Monkey:
     def has_legs(self):
         print("four legs")
 
-
-class Human(Monkey, Animal):
-    h = 'Human'
-    def __init__(self):
-        print('human')
-        # self.a = a
-        # self.__b = b  # Private variable
-
-    def has_legs(self):
-        print('two legs')
-
-    def can_speak(self):
-        print('voice')
-
-a = Animal()
-m = Monkey()
-h = Human()
-
-# m.can_live_on_land()
-# m.has_legs()
-# m.can_speak()
-
-h.can_speak()
-# h.can_live_on_land()
+#
+# class Human(Monkey, Animal):
+#     h = 'Human'
+#     def __init__(self):
+#         print('human')
+#         # self.a = a
+#         # self.__b = b  # Private variable
+#
+#     def has_legs(self):
+#         print('two legs')
+#
+#     def can_speak(self):
+#         print('voice')
+#
+# a = Animal()
+# m = Monkey()
+# h = Human()
+# 
+# # m.can_live_on_land()
+# # m.has_legs()
+# # m.can_speak()
+#
+# h.can_speak()
+# # h.can_live_on_land()
 
 """
 Single Inheritance
