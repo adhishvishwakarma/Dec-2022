@@ -119,15 +119,15 @@ class Animal:  # Base class
         print('yes')
 
 
-class Monkey:
-    def __init__(self):
-        print('monkey')
-
-    def can_speak(self):
-        print("can speak monkey")
-
-    def has_legs(self):
-        print("four legs")
+# can_speaklass Monkey:
+#     def __init__(self):
+#         print('monkey')
+#
+#     def can_speak(self):
+#         print("can speak monkey")
+#
+#     def has_legs(self):
+#         print("four legs")
 
 #
 # class Human(Monkey, Animal):
@@ -146,7 +146,7 @@ class Monkey:
 # a = Animal()
 # m = Monkey()
 # h = Human()
-# 
+#
 # # m.can_live_on_land()
 # # m.has_legs()
 # # m.can_speak()
